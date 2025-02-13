@@ -1,0 +1,134 @@
+ * {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+ }
+ body {
+   
+ }
+ header {
+   width: 100%;
+   height: 40px;
+   background-color: #fff;
+   padding-top: 5px;
+}
+ header .parent .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-inline: auto;
+   padding-inline: 10px;
+ }
+ header .parent .container img {
+   width: 80px;
+   
+ }
+ header .parent .container .links {
+   position: relative;
+   margin-top: 5px;
+
+ }
+ header .parent .container .links .icon {
+   width: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row-reverse
+ }
+ header .links .icon span {
+   background-color: #333;
+   margin-bottom: 5px;
+   width: 100%;
+   height: 2px;
+ }
+ header .links .icon span:nth-child(2) {
+   width: 60%;
+   transition: 0.3s;
+ }
+ header .links .icon span:nth-child(2):hover {
+   width: 100%;
+ }
+ header .links .icon span:last-child {
+   height: 2px;
+ }
+ header .links ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   background-color: hsla(235, 0%, 84%, 1);
+   position: absolute;
+   right: 0;
+   top: calc(100% + 10px);
+   min-width: 200px;
+   display: none;
+ }
+ header .links:hover ul {
+   display: block;
+ }  
+ header .links ul li {
+   padding: 5px;
+ }
+ header .links ul:before {
+   content:'';
+   border-width: 10px;
+   border-style: solid;
+   border-color: transparent transparent hsla(235, 0%, 84%, 1) transparent; 
+   position: absolute;
+   right: 5px;
+   top: -20px;
+   
+}
+ header .links ul li a {
+   display: block;
+   text-decoration: none;
+   color: #333;
+   transition: 0.3s;
+ }
+ header .links ul li a:hover {
+   padding-left: 15px;
+ }
+ header .links ul li:not(:last-child){
+   border-bottom: 1px solid #BCBCBC;
+ }
+ 
+  /* small */
+ @media (min-width: 576px) { 
+  .container {
+  width: 500px;
+ }
+ }
+ /* medium */
+@media (min-width: 768px) { 
+  .container {
+    width: 750px;
+  }
+}
+ /* large */
+@media (min-width: 992px) { 
+  .container {
+  width: 900px;
+}
+}
+ /* extra large */
+@media (min-width: 1200px) { 
+  .container {
+  width: 800px;
+}
+}
+.landing {
+  background-image: url(intro.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.landing .intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+  
+  }
+.landing .intro h1 {
+  margin: 10px 0;
+  text-align: center;
+}
