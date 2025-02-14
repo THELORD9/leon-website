@@ -1,3 +1,5 @@
+/*  use this as a template */
+ 
  * {
    -moz-box-sizing: border-box;
    -webkit-box-sizing: border-box;
@@ -119,16 +121,24 @@
 .landing {
   background-image: url(intro.jpg);
   background-size: cover;
-  height: 100vh;
+  height: calc(100vh - 40px);
 }
 .landing .intro {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%)
-  
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
   }
 .landing .intro h1 {
-  margin: 10px 0;
-  text-align: center;
+  margin: 10px;
+  color: #00A992;
+  font-size: clamp(30px,50px,60px);
+}
+
+.landing .intro p {
+  font-size: 18px;
+  line-height: 20px;
 }
