@@ -5,11 +5,29 @@
    margin: 0;
    padding: 0;
  }
+ html{
+   scroll-behavior: smooth;
+ }
  body {
    
  }
+ .special-heading {
+   color: var(--secondary-color);
+   text-align: center;
+   font-size: 5em;
+   margin: 0;
+   letter-spacing: -2px;
+   font-weight: 800;
+ }
+ .special-heading + p {
+   margin: -30px 0 0;
+   text-align: center;
+   color: #777;
+   font-weight: 500;
+ }
  :root {
    --main-color: #00A992;
+   --secondary-color: #ebeced;
  }
  header {
    width: 100%;
@@ -184,4 +202,67 @@
 }
 .features .feat h3 {
   font-weight: 800;
+}
+.services {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-inline: auto;
+}
+.services .services-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  padding-top: 60px;
+
+
+}
+.services .services-content .srv {
+  display: flex;
+  margin-bottom: 20px;
+  
+}
+@media (max-width: 576px) {
+  .services .services-content .srv  {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.srv i {
+  flex-basis: 30px;
+  color: var(--main-color);
+}
+.services-content .srv .text {
+  flex: 1
+}
+.services-content .srv .text h3 {
+  margin: 0 0 10px 0;
+}
+.services-content .srv .text p {
+  color: #777;
+  font-weight: 300;
+}
+.services img {
+  width: 90%;
+  position: relative;
+}
+.services .image {
+  position: relative;
+}
+ @media (max-width: 576px) { 
+  .services .image {
+    width: 250px;
+    margin-inline: auto;
+    margin-top:10px
+  }
+  }
+
+.services .image::before {
+  content: "";
+  width: 20%;
+  height: 110%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: -10px;
+  right: 0px;
 }
