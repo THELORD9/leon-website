@@ -9,7 +9,7 @@
    scroll-behavior: smooth;
  }
  body {
-   
+   font-family: Arial,sans-serif
  }
  .special-heading {
    color: var(--secondary-color);
