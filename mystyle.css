@@ -8,6 +8,9 @@
  body {
    
  }
+ :root {
+   --main-color: #00A992;
+ }
  header {
    width: 100%;
    height: 40px;
@@ -156,4 +159,29 @@
 .landing .intro p {
   font-size: 18px;
   line-height: 20px;
+}
+/* features */
+.features {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-inline: auto;
+}
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  grid-gap: 10px;
+}
+.features .feat {
+  padding: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+.features .feat i {
+  color: var(--main-color);
+  font-size: 30px
+}
+.features .feat h3 {
+  font-weight: 800;
 }
