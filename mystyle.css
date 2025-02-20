@@ -9,7 +9,8 @@
    scroll-behavior: smooth;
  }
  body {
-   font-family: Arial,sans-serif
+   font-family: Arial,sans-serif;
+   text-transform: capitalize;
  }
  .special-heading {
    color: var(--secondary-color);
@@ -175,7 +176,7 @@
 }
 
 .landing .intro p {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 20px;
 }
 /* features */
