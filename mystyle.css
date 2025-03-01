@@ -11,6 +11,7 @@
  body {
    font-family: Arial,sans-serif;
    text-transform: capitalize;
+   user-select: none;
  }
  .special-heading {
    color: var(--secondary-color);
@@ -421,3 +422,45 @@
 }
 
  }
+ .contact {
+   background-color: #f6f6f6;
+   display: flex;
+   justify-content: center;
+   padding: 50px 0;
+ }
+.contact .info {
+  text-align: left;
+  padding: 50px 10px;
+}
+.contact .label {
+  font-weight: 800;
+  font-size: 25px;
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+.contact .info a {
+  text-decoration: none;
+  color: var(--main-color);
+  display: inline-block;
+  margin: 10px 0 10px 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.contact .info .social p {
+  display: inline-block;
+  margin: 10px 10px 10px 30px;
+}
+.contact .info .social i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+footer {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background-color: #00493A;
+  height: 3rem;
+}
+footer span {
+  color: var(--main-color);
+}
